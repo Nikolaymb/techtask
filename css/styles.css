@@ -52,7 +52,7 @@ body {
     background-color: #0056b3;
 }
 
-/* Ваш предыдущий CSS код остается таким же */
+
 
 .feedback-form label {
     font-size: 16px;
@@ -67,5 +67,5 @@ body {
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    resize: vertical; /* Разрешить вертикальное изменение размера для textarea */
+    resize: vertical; 
 }
