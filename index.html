@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/validate.js"></script>
+    <title>Форма обратной связи</title>
+</head>
+<body>
+    <div class="container">
+        <form class="feedback-form" id="contactForm" action="php/form.php" method="POST" enctype="multipart/form-data" onsubmit="return validateForm(this)">
+            <h2>Форма обратной связи</h2>
+            <p id="error-msg" style="color: red;"></p>
+            <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" minlength="5" maxlength="50" required>
+        
+            <label for="email">Email:</label>
+                <input type="email" id="email" name="email" minlength="5" maxlength="50" required>
+            
+            <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" rows="4" minlength="4" maxlength="150" required></textarea>
+           
+            <label for="attachment">Прикрепить файл:</label>
+              <input type="file" id="attachment" name="attachment" required>
+
+            <button type="submit">Отправить</button>
+   
+        </form>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
